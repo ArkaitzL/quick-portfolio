@@ -48,6 +48,6 @@ const props = defineProps({
 
 const iconComponent = computed(() => {
   // Accede al icono desde el objeto 'icons' usando la propiedad 'icon'
-  return icons[props.icon] || icons['document']; // fallback al icono por defecto
+  return icons[props.icon] ; // fallback al icono por defecto
 });
 </script>

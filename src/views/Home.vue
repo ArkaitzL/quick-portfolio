@@ -1,15 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import LinkCard from '../components/LinkCard.vue';
-
-const links = ref([
-  { name: 'GitHub', url: 'https://github.com/ArkaitzL', icon: 'code-bracket' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/arkaitz-leon-3a834926a/', icon: 'briefcase' },
-  { name: 'Gitfolio', url: 'https://github.arkaitz.me/', icon: 'archive-box-x-mark' },
-  { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'controller' },
-  { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
-  { name: 'Contact', url: '#', icon: 'envelope' },
-]);
+import { links } from '../data'; // Importamos los enlaces desde src/data.js
 
 </script>
 
