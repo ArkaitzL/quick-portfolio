@@ -1,20 +1,20 @@
 <template>
   <a
     :href="url"
-    class="group block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+    class="group block p-6 bg-card bg-opacity-50 backdrop-blur-lg rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105"
   >
     <div class="flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+      <div class="flex items-center space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-accent-primary to-accent-secondary rounded-full flex items-center justify-center">
           <component
             :is="iconComponent"
-            class="w-6 h-6 text-teal-600"
+            class="w-6 h-6 text-text-primary"
           />
         </div>
-        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-teal-600">{{ name }}</h2>
+        <h2 class="text-xl font-semibold text-text-primary group-hover:text-accent-primary">{{ name }}</h2>
       </div>
       <svg
-        class="w-6 h-6 text-gray-400 group-hover:text-teal-600 transition-colors duration-300 ease-in-out"
+        class="w-6 h-6 text-text-secondary group-hover:text-accent-secondary transition-colors duration-300 ease-in-out"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

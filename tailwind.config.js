@@ -11,21 +11,31 @@ export default {
           secondary: '#d6d3d1',
         },
         accent: {
-          primary: '#387a5e',
-          secondary: '#387a6f',
+          primary: '#9333ea', // Updated to match the purple gradient
+          secondary: '#ec4899', // Updated to match the pink gradient
         },
-        green: {
-          300: '#3fb180', // Asumiendo un tono similar al texto "Vue"
+        purple: {
+          400: '#c084fc', // Added to match the text gradient
+          500: '#a855f7', // Added for the icon background
+          900: '#581c87', // Added for the background gradient
         },
-        teal: {
-          300: '#5eead4', // Asumiendo un tono similar al texto "TailwindCSS"
+        pink: {
+          600: '#db2777', // Added for the text and background gradients
+        },
+        indigo: {
+          900: '#312e81', // Added for the background gradient
+        },
+        gray: {
+          300: '#d1d5db', // Added for potential use
+          400: '#9ca3af', // Added for the arrow icon
+          800: '#1f2937', // Added for card background
+          900: '#111827', // Added for the background gradient
         },
         code: {
           background: '#332e2a',
           border: '#2b2623',
         },
-        footer: '#4b5563', // Equivalente a text-gray-600
-        background: '#98a17a',
+        footer: '#4b5563',
       },
     },
   },
