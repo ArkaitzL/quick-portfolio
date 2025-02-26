@@ -28,14 +28,8 @@
 
 <script setup>
 import { computed } from 'vue';
-import {
-  CodeBracketIcon,
-  BriefcaseIcon,
-  ChatBubbleLeftRightIcon,
-  DocumentIcon,
-  PencilIcon,
-  EnvelopeIcon,
-} from '@heroicons/vue/24/outline';
+// Importa el objeto de iconos
+import icons from '../data';
 
 const props = defineProps({
   name: {
@@ -53,14 +47,7 @@ const props = defineProps({
 });
 
 const iconComponent = computed(() => {
-  const icons = {
-    'code-bracket': CodeBracketIcon,
-    'briefcase': BriefcaseIcon,
-    'chat-bubble-left-right': ChatBubbleLeftRightIcon,
-    'document': DocumentIcon,
-    'pencil': PencilIcon,
-    'envelope': EnvelopeIcon,
-  };
-  return icons[props.icon] || DocumentIcon;
+  // Accede al icono desde el objeto 'icons' usando la propiedad 'icon'
+  return icons[props.icon] || icons['document']; // fallback al icono por defecto
 });
 </script>
