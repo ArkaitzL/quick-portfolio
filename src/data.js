@@ -28,5 +28,5 @@ export const links = [
   { name: 'Gitfolio', url: 'https://github.arkaitz.me/', icon: 'archive-box-x-mark' },
   { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'puzzle-piece' }, 
   { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
-  { name: 'Contacto', url: '#', icon: 'envelope' },
+  { name: 'Contacto', url: 'mailto:leonarkaitz@gmail.com', icon: 'envelope' }, 
 ];
