@@ -5,28 +5,26 @@ import {
   DocumentIcon,
   PencilIcon,
   EnvelopeIcon,
-  ArchiveBoxXMarkIcon,  // Añadido el icono faltante
+  ArchiveBoxXMarkIcon,
 } from '@heroicons/vue/24/outline';
 
-// Mapea los iconos con sus nombres
 const icons = {
   'code-bracket': CodeBracketIcon,
   'briefcase': BriefcaseIcon,
-  'chat-bubble-left-right': ChatBubbleLeftRightIcon,
+  'chat-bubble-left-right': ChatBubbleLeftRightIcon, 
   'document': DocumentIcon,
   'pencil': PencilIcon,
   'envelope': EnvelopeIcon,
-  'archive-box-x-mark': ArchiveBoxXMarkIcon,  // Añadido el icono faltante
+  'archive-box-x-mark': ArchiveBoxXMarkIcon,
 };
 
 export default icons;
 
-// Array de enlaces utilizando el objeto de iconos
 export const links = [
   { name: 'GitHub', url: 'https://github.com/ArkaitzL', icon: 'code-bracket' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/arkaitz-leon-3a834926a/', icon: 'briefcase' },
   { name: 'Gitfolio', url: 'https://github.arkaitz.me/', icon: 'archive-box-x-mark' },
-  { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'pencil' },
+  { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'chat-bubble-left-right' }, 
   { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
   { name: 'Contact', url: '#', icon: 'envelope' },
 ];
