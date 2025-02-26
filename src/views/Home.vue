@@ -3,11 +3,11 @@ import { ref } from 'vue';
 import LinkCard from '../components/LinkCard.vue';
 
 const links = ref([
-  { name: 'GitHub', url: 'https://github.com', icon: 'code-bracket' },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'briefcase' },
-  { name: 'Gitfolio', url: '#', icon: 'archive-box-x-mark' },
-  { name: 'Itch.io', url: 'https://itch.io', icon: 'controller' },
-  { name: 'Portfolio', url: '#', icon: 'document' },
+  { name: 'GitHub', url: 'https://github.com/ArkaitzL', icon: 'code-bracket' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/arkaitz-leon-3a834926a/', icon: 'briefcase' },
+  { name: 'Gitfolio', url: 'https://github.arkaitz.me/', icon: 'archive-box-x-mark' },
+  { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'controller' },
+  { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
   { name: 'Contact', url: '#', icon: 'envelope' },
 ]);
 
@@ -24,14 +24,16 @@ const links = ref([
             <!-- Profile Image -->
             <img
               class="h-32 w-32 rounded-full object-cover shadow-md border-4 border-accent-primary"
-              src="https://placekitten.com/200/200"
+              src="/profile-pic.png"
               alt="Profile picture"
             />
             <div class="text-center sm:text-left">
               <!-- Name and profession -->
-              <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-primary to-accent-secondary">Jane Doe</h1>
+              <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-primary to-accent-secondary">
+                Arkaitz Leon
+              </h1>
               <p class="mt-2 text-xl font-medium text-text-secondary">
-                Web Developer & Designer
+                Desarrollador Web Fullstack & Creador de Videojuegos
               </p>
             </div>
           </div>
