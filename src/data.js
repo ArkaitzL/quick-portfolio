@@ -23,10 +23,10 @@ const icons = {
 export default icons;
 
 export const links = [
-  { name: 'GitHub', url: 'https://github.com/ArkaitzL', icon: 'code-bracket' },
+  { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/arkaitz-leon-3a834926a/', icon: 'briefcase' },
+  { name: 'GitHub', url: 'https://github.com/ArkaitzL', icon: 'code-bracket' },
   { name: 'Gitfolio', url: 'https://github.arkaitz.me/', icon: 'archive-box-x-mark' },
   { name: 'Itch.io', url: 'https://baboongamesoficial.itch.io/', icon: 'puzzle-piece' }, 
-  { name: 'Portfolio', url: 'https://arkaitz.me/', icon: 'document' },
   { name: 'Contacto', url: 'mailto:leonarkaitz@gmail.com', icon: 'envelope' }, 
 ];
