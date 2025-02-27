@@ -2,10 +2,14 @@
   <a
     :href="url"
     class="group block p-6 bg-card bg-opacity-50 backdrop-blur-lg rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105"
+    :class="destacado ? 'border-2 border-yellow-400' : ''"
   >
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-4">
-        <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-accent-primary to-accent-secondary rounded-full flex items-center justify-center">
+        <!-- Contenedor del icono sin borde amarillo -->
+        <div
+          class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-accent-primary to-accent-secondary"
+        >
           <component
             :is="iconComponent"
             class="w-6 h-6 text-text-primary"
@@ -28,7 +32,6 @@
 
 <script setup>
 import { computed } from 'vue';
-// Importa el objeto de iconos
 import icons from '../data';
 
 const props = defineProps({
@@ -44,10 +47,13 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  destacado: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const iconComponent = computed(() => {
-  // Accede al icono desde el objeto 'icons' usando la propiedad 'icon'
-  return icons[props.icon] ; // fallback al icono por defecto
+  return icons[props.icon] || icons['document'];
 });
 </script>

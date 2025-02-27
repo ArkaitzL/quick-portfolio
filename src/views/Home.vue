@@ -36,13 +36,16 @@ import { links } from '../data'; // Importamos los enlaces desde src/data.js
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <LinkCard
               v-for="link in links"
-              :key="link.name"
-              :name="link.name"
-              :url="link.url"
-              :icon="link.icon"
+                :key="link.name"
+                :name="link.name"
+                :url="link.url"
+                :icon="link.icon"
+                :destacado="link.destacado || false"
             />
           </div>
         </main>
+
+
       </div>
     </div>
   </div>
