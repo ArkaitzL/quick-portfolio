@@ -3,7 +3,7 @@
     ref="cardElement"
     :href="url"
     class="group block p-6 bg-card bg-opacity-50 backdrop-blur-lg rounded-2xl shadow-lg transition-all duration-300 ease-in-out link-card"
-    :class="destacado ? 'border-2 border-yellow-400 destacado' : ''"
+    :class="destacado ? 'border-2 border-gradient-yellow destacado' : ''"
     @mouseenter="startHoverAnimation"
     @mouseleave="endHoverAnimation"
   >
@@ -17,7 +17,7 @@
             class="w-6 h-6 text-text-primary icon"
           />
         </div>
-        <h2 class="text-xl font-semibold text-text-primary group-hover:text-accent-primary card-title">{{ name }}</h2>
+        <h2 class="text-xl font-semibold text-text-primary group-hover:text-purple-400 card-title">{{ name }}</h2>
       </div>
       <svg
         class="w-6 h-6 text-text-secondary group-hover:text-accent-secondary transition-colors duration-300 ease-in-out arrow-icon"
@@ -124,24 +124,13 @@ onUnmounted(() => {
 .destacado {
   position: relative;
   overflow: hidden;
-}
-
-.destacado::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  border: 2px solid rgba(255, 215, 0, 0.7); /* Borde más suave */
   border-radius: 1rem;
-  background: linear-gradient(45deg, rgba(255, 215, 0, 0.5), rgba(255, 165, 0, 0.5));
-  z-index: -1;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1)); /* Degradado suave */
 }
 
-.destacado:hover::before {
-  opacity: 1;
+.destacado:hover {
+  border-color: rgba(255, 215, 0, 1); /* Borde más intenso en hover */
 }
 
 .icon {
