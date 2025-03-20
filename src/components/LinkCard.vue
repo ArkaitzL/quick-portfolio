@@ -1,6 +1,7 @@
 <template>
   <a
     ref="cardElement"
+    target="_blank"
     :href="url"
     class="group block p-6 bg-card bg-opacity-50 backdrop-blur-lg rounded-2xl shadow-lg transition-all duration-300 ease-in-out link-card"
     :class="destacado ? 'border-2 border-gradient-yellow destacado' : ''"
